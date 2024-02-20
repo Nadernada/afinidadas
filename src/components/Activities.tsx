@@ -24,7 +24,7 @@ const Activities = () => {
 
           {
             isActive === 0 ? (
-              <div className="w-full flex flex-row gap-x-8 items-center justify-start">
+              <div className="w-full flex flex-row gap-x-8 items-center justify-center">
                 <div className="relative h-full">
                   <div className="absolute top-0 left-16 rounded-ee-[40px] flex justify-center items-center p-6">
                     <h2 className="uppercase text-[40px] font-bold">teambuilding</h2>
