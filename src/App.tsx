@@ -4,10 +4,14 @@ import Espace from "./components/Espaces";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Reviews from "./components/Reviews";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+
+  
+
   return (
-    <div className="w-full flex flex-col items-center text-primary bg-illu">
+    <div className="w-full flex flex-col items-center 2xl:w-[1440px] mx-auto text-primary bg-illu">
       <Hero />
       
       <Espace />
@@ -16,6 +20,7 @@ function App() {
       <Appartment />
 
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

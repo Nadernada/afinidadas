@@ -32,4 +32,5 @@ body {
 .bg-gradient {
   background: url('/public/images/gradientBg.png') no-repeat;
   background-size: cover;
+  background-position: center;
 }

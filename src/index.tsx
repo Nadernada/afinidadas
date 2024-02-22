@@ -7,6 +7,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Formation from './Formation';
 import Teambuilding from './Teambuilding';
 import Contact from './Contact';
+import Coworking from './Coworking';
+import SalleReunion from './SalleReunion';
+import Bureaux from './Bureaux';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,18 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />
+  },
+  {
+    path: "/co-working",
+    element: <Coworking />
+  },
+  {
+    path: "/bureaux",
+    element: <Bureaux />
+  },
+  {
+    path: "/reunion",
+    element: <SalleReunion />
   },
 
 ])
