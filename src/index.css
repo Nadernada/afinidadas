@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+@import url(https://db.onlinewebfonts.com/c/2d3e3d7592d858169466b7fdffa7ffa6?family=ITC+Ronda+W01+Regular);
 
 * {
   padding: 0;
@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "ITC Ronda W01 Regular", sans-serif;
 }
 
 .bg-illu {

@@ -87,44 +87,13 @@ const Reviews = () => {
   }, { scope: container })
 
   return (
-    <div className="reviews-ct w-full mt-28 lg:mt-36 flex flex-col overflow-hidden" ref={container}>
-      <div className="flex flex-row justify-start items-center">
+    <div className="w-full mt-28 lg:mt-36 flex flex-col overflow-hidden" ref={container}>
+      <div className="reviews-ct flex flex-row justify-start items-center px-12">
         <img src="/images/blueStar.svg" alt="star" className="fade-in scale-50 lg:scale-75 " />
         <h2 className="fade-in text-[24px] lg:text-[40px] uppercase font-bold">notre fierte c'est vous</h2>
       </div>
-      <div className="flex flex-col gap-y-6 py-12 reviews">
-        <div className="flex flex-col lg:flex-row gap-y-4 lg:gap-x-8 lg:-translate-x-12 items-center">
-          {
-            review.map((item) => (
-              <div key={item.text} className="fade-right bg-gray-200 rounded-[35px] p-8 flex flex-col justify-center gap-y-4 w-10/12 min-h-[250px] lg:min-w-[400px]">
-                <div className="flex flex-row gap-x-3 items-center">
-                  <div className="rounded-full bg-gray-300 w-[70px] h-[70px]"></div>
-                  <div className="flex flex-col">
-                    <p className="text-[20px] font-semibold">{item.name}</p>
-                    <p className="text-[15px] text-slate-500">{item.at}</p>
-                  </div>
-                </div>
-                <p className="text-[15px]">{item.text}</p>
-              </div>
-            ))
-          }
-        </div>
-        <div className="hidden lg:flex flex-row gap-x-8 translate-x-10">
-          {
-            reviewBottom.map((item) => (
-              <div key={item.text} className="fade-left bg-gray-200 rounded-[35px] p-8 flex flex-col justify-center gap-y-4 min-w-[400px]">
-                <div className="flex flex-row gap-x-3 items-center">
-                  <div className="rounded-full bg-gray-300 w-[70px] h-[70px]"></div>
-                  <div className="flex flex-col">
-                    <p className="text-[20px] font-semibold">{item.name}</p>
-                    <p className="text-[15px] text-slate-500">{item.at}</p>
-                  </div>
-                </div>
-                <p className="text-[15px]">{item.text}</p>
-              </div>
-            ))
-          }
-        </div>
+      <div className="flex flex-col gap-y-6">
+        <img src="/images/reviewsSphereHome.svg" alt="reviews" className="fade-right lg:w-[1041px] lg:h-[842px] w-full mx-auto lg:-translate-y-28 lg:translate-x-12" />
       </div>
     </div>
   )

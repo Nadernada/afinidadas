@@ -42,8 +42,8 @@ const Appartment = () => {
   }, { scope: container })
 
   return (
-    <div className="appart-ct w-[95%] mt-20 lg:mt-40 px-6 flex flex-col lg:flex-row gap-y-6 lg:gap-x-6 justify-between" ref={container}>
-      <div className="flex flex-col gap-y-4 lg:w-5/12 relative">
+    <div className=" w-[95%] mt-20 lg:mt-0 px-6 flex flex-col lg:flex-row gap-y-6 lg:gap-x-6 justify-between" ref={container}>
+      <div className="appart-ct flex flex-col gap-y-4 lg:w-5/12 relative">
         <h5 className="fade-right text-[24px] lg:text-[40px] font-bold">Souhaitez-vous trouver votre appartement idéal?</h5>
         <p className="fade-right text-[16px] lg:text-[20px] w-8/12">Découvrez nos locations premium et trouvez la maison parfaite qui vous correspond!</p>
         <img src="/images/blueStar.svg" alt="star" className="fade-in absolute -right-4 bottom-10 lg:bottom-16 scale-75 lg:scale-100" />

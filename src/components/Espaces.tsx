@@ -56,7 +56,7 @@ const Espace = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-y6 lg:gap-x-6 lg:justify-end px-8 lg:px-0">
-        <img src="/images/espacesIllustration.png" alt="espace coworking" className="fade-in -translate-y-8 lg:-translate-y-16 order-last lg:order-none" loading="lazy" />
+        <img src="/images/espacesIllustration.png" alt="espace coworking" className="fade-in -translate-y-8 lg:-translate-y-16 order-last lg:order-none z-10" loading="lazy" />
         <div className="fade-in lg:w-[30%] rounded-[30px] bg-orangey flex flex-col text-white p-6 lg:p-8 gap-y-4 h-fit">
           <h4 className="text-[24px] lg:text-[32px] font-semibold">Espace CoWorking</h4>
           <div className="flex flex-row justify-between">

@@ -53,13 +53,13 @@ const Activities = () => {
   },[isActive])
 
   return (
-    <div className="activities-ct flex flex-row items-center mt-8 lg:mt-0" ref={container}>
+    <div className="flex flex-row items-center mt-8 lg:mt-0" ref={container}>
 
       <div className="fade-in ps-20 hidden lg:inline">
         <img src="/images/right-arrow.svg" alt="arrow" className="w-10 h-10 translate-y-28 cursor-pointer rotate-180" onClick={handleNext} />
       </div>
 
-      <div className="flex flex-col gap-y-6 lg:gap-y-12 px-10 transition-all">
+      <div className="activities-ct flex flex-col gap-y-6 lg:gap-y-12 px-10 transition-all">
           <div className="flex flex-row w-full gap-x-2 items-center justify-start lg:ps-12">
             <h1 className="fade-in text-[24px] lg:text-[64px] font-bold uppercase">Ameliorer votre business</h1>
             <img src="/images/redirectArrowBlue.svg" alt="arrow" className="fade-in w-[55px] lg:w-[75px] h-[55px] lg:h-[55px]" />
@@ -72,7 +72,7 @@ const Activities = () => {
                   <div className="absolute top-0 lg:left-12 rounded-ee-[40px] flex justify-center items-center p-6">
                     <h2 className="uppercase text-[24px] lg:text-[40px] font-bold">teambuilding</h2>
                   </div>
-                  <img src="/images/teamBuilding.png" alt="teambuilding activities" className="rounded-[30px] h-full aspect-auto" />
+                  <img src="/images/teamBuilding.png" alt="teambuilding activities" className="rounded-[30px] w-full aspect-auto" />
                 </div>
                 <div className="flex flex-col gap-y-4 lg:w-6/12">
                   <div className="flex flex-row justify-between gap-x-2">

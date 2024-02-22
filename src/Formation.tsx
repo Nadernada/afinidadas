@@ -137,12 +137,12 @@ const Formation = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col px-6 lg:px-36 lg:mt-48 mb-12 lg:mb-0">
+      <div className="w-full flex flex-col px-6 lg:px-36 mt-12 lg:mt-48 mb-12 lg:mb-0">
         <h2 className="fade-up-reviews capitalize font-bold text-[24px] lg:text-[40px] lg:w-1/2">des commentaires qui<br /> nous font honneur</h2>
-        <img src="/images/reviewsSphere.svg" alt="reviews" className="fade-up-reviews lg:w-[1041px] lg:h-[842px] w-full mx-auto lg:-translate-y-28" />
+        <img src="/images/reviewsSphere.svg" alt="reviews" className="fade-up-reviews lg:w-[1041px] lg:h-[842px] w-full mx-auto lg:-translate-y-28 translate-x-3 lg:translate-x-12 scale-150 lg:scale-100" />
       </div>
 
-      <div className="faq-trigger w-full flex flex-col relative bg-slate-100 px-6 lg:px-60 py-16 mb-12">
+      <div className="faq-trigger w-full flex flex-col relative bg-slate-100 px-6 lg:px-60 py-16 my-12 lg:mt-0">
         <h3 className="fade-right-faq font-bold text-[24px] lg:text-[38px] mb-8">FAQs</h3>
         <details open>
           <summary className="fade-left-faq font-semibold lg:font-bold border-t-[1px] border-b-[1px] border-gray-300 py-4 cursor-pointer">

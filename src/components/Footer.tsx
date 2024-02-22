@@ -43,10 +43,10 @@ const Footer = () => {
 
 
   return (
-    <div className="w-[97%] mt-6 lg:mb-5 p-10 bg-bluey rounded-[35px] self-center" ref={container}>
-      <div className="footer-ct flex flex-col gap-y-24">
-        <div className="flex flex-col lg:flex-row gap-y-6 justify-between">
-          <Link to={'/'}><img src="/images/Logo-Afinidadas.png" alt="logo afinadadas" className="fade-in w-[140px] lg:w-[188px] h-[64px] lg:h-[82px]" /></Link>
+    <div className="footer-ct w-[97%] mt-6 lg:mb-5 p-10 bg-bluey rounded-[35px] self-center" ref={container}>
+      <div className="flex flex-col gap-y-24">
+        <div className="fade-in flex flex-col lg:flex-row gap-y-6 justify-between">
+          <Link to={'/'}><img src="/images/Logo-Afinidadas.png" alt="logo afinadadas" className="w-[140px] lg:w-[188px] h-[64px] lg:h-[82px]" /></Link>
 
           <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-12">
             <div className="flex flex-col gap-y-6 text-white">
@@ -81,7 +81,7 @@ const Footer = () => {
             <img src="/images/telegram.svg" alt="social" className="fade-in w-[40px] h-[40px]" />
             <img src="/images/whatsapp.svg" alt="social" className="fade-in w-[40px] h-[40px]" />
           </div>
-          <p className="fade-in text-[12px] text-white">bureau 5, et Tantan, Résidence Perla Oficinas, Av. Oujda,<br />Tanger</p>
+          <p className="fade-in text-[12px] text-white">bureau 5, Résidence Perla Oficinas, Av. Oujda,<br />Tanger</p>
         </div>
       </div>
     </div>
