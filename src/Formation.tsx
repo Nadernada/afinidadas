@@ -89,11 +89,11 @@ const Formation = () => {
     <div className="w-full flex flex-col lg:items-center 2xl:w-[1440px] mx-auto overflow-hidden" ref={container}>
       <Navbar />
 
-      <div className="flex flex-col gap-y-4 px-6 lg:px-36 mt-6 lg:mt-16 justify-start items-start relative">
+      <div className="w-full flex flex-col gap-y-4 px-6 lg:px-36 mt-6 lg:mt-16 justify-start items-center relative">
         <img src="/images/Dawn.png" alt="dawn" className="absolute left-0 top-[45%] -z-10 opacity-35" />
-        <h1 className="fade-in text-[24px] lg:text-[64px] font-bold">Besoin de <span className="text-bluey">perfectionner</span> vos compétences professionnelles ?</h1>
-        <p className="fade-in text-[16px] lg:text-[24px] w-10/12">Afinidades propose des programmes de formation sur mesure adaptés à vos besoins spécifiques. Investissez dans votre développement personnel et professionnel avec nos cours de qualité.</p>
-        <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-8 lg:mt-10 self-end order-first lg:order-none">
+        <h1 className="fade-in text-[24px] lg:text-[64px] font-bold lg:w-10/12">Besoin de <span className="text-bluey">perfectionner</span> vos compétences professionnelles ?</h1>
+        <p className="fade-in text-[16px] lg:text-[24px] lg:w-10/12">Afinidades propose des programmes de formation sur mesure adaptés à vos besoins spécifiques. Investissez dans votre développement personnel et professionnel avec nos cours de qualité.</p>
+        <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-8 lg:mt-10  order-first lg:order-none">
           <div className="flex flex-col gap-y-6 justify-center items-center">
             <img src="/images/grayStar.svg" alt="star" className="fade-right hidden lg:inline w-[122px] h-[122px] translate-y-12" />
             <div className="fade-left hidden lg:flex rounded-[35px] border-[8px] border-bluey flex-col p-4 mt-auto">
@@ -103,9 +103,10 @@ const Formation = () => {
           </div>
           <div className="relative flex-1">
             <img src="/images/formationHero.png" alt="formation sur mesure tanger" className="fade-right w-[845px]" />
-            <Link to={'/contact'} className="fade-left rounded-full bg-orangey w-4/12 px-4 py-2 lg:py-8 flex items-center justify-center absolute bottom-1 lg:bottom-8 right-3 lg:right-6">
-              <p className="text-white text-[12px] lg:text-[24px] font-semibold">Contactez-nous</p>
-            </Link>
+            <a href='https://wa.me/+212666546005' className="fade-left rounded-full bg-orangey w-4/12 px-4 py-2 lg:py-8 flex flex-row gap-x-2 items-center justify-center absolute bottom-1 lg:bottom-8 right-3 lg:right-6">
+              <img src="/images/whatsapp-icon.svg" alt="whatsapp icon" className="w-4 lg:w-8 h-4 lg:h-8 invert-1" />
+              <p className="text-white text-[12px] lg:text-[24px] font-semibold text-center lg:text-start">Contactez-nous</p>
+            </a>
           </div>
         </div>
       </div>
