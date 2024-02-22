@@ -68,7 +68,7 @@ const SalleReunion = () => {
   }, { scope: container })
 
   return (
-    <div className="w-full 2xl:max-w-[1440px] flex flex-col mx-auto lg:items-center" ref={container}>
+    <div className="w-full 2xl:max-w-[1440px] flex flex-col mx-auto lg:items-center overflow-hidden" ref={container}>
       <Navbar />
 
       <img src="/images/reunion.svg" alt="salle de reunion espace" className="fade-in my-12 w-[90%] lg:w-[1065px] self-center" />

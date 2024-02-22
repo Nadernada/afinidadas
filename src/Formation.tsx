@@ -86,7 +86,7 @@ const Formation = () => {
   }, { scope: container })
 
   return (
-    <div className="w-full flex flex-col lg:items-center 2xl:w-[1440px] mx-auto" ref={container}>
+    <div className="w-full flex flex-col lg:items-center 2xl:w-[1440px] mx-auto overflow-hidden" ref={container}>
       <Navbar />
 
       <div className="flex flex-col gap-y-4 px-6 lg:px-36 mt-6 lg:mt-16 justify-start items-start relative">

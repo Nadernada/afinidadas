@@ -76,7 +76,7 @@ const Coworking = () => {
   }, { scope: container })
 
   return (
-    <div className="w-full flex flex-col lg:items-center mx-auto px-4 lg:px-0 2xl:max-w-[1440px]" ref={container}>
+    <div className="w-full flex flex-col lg:items-center mx-auto px-4 lg:px-0 2xl:max-w-[1440px] overflow-hidden" ref={container}>
       <Navbar />
 
       <img src="/images/coWorkingHero.png" alt="coworking espace" className="fade-in mt-16" />
