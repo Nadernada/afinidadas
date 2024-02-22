@@ -79,7 +79,7 @@ const Footer = () => {
         <div  className="flex flex-col lg:flex-row gap-y-6 lg:w-1/3 justify-between">
           <div className="flex flex-row gap-x-2">
             <img src="/images/telegram.svg" alt="social" className="fade-in w-[40px] h-[40px]" />
-            <img src="/images/whatsapp.svg" alt="social" className="fade-in w-[40px] h-[40px]" />
+            <a href="https://wa.me/+212666546005"><img src="/images/whatsapp.svg" alt="social" className="fade-in w-[40px] h-[40px]" /></a>
           </div>
           <p className="fade-in text-[12px] text-white">bureau 5, Résidence Perla Oficinas, Av. Oujda,<br />Tanger</p>
         </div>
