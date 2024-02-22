@@ -4,12 +4,12 @@ import Navbar from "./components/Navbar"
 import ScrollToTop from "./components/ScrollToTop"
 
 const imgPaths = [
-  '/images/bCarousel1.jpg',
-  '/images/bCarousel2.jpg',
-  '/images/bCarousel3.jpg',
-  '/images/bCarousel4.jpg',
-  '/images/bCarousel5.jpg',
-  '/images/bCarousel6.jpg',
+  '/images/bCarousel1.JPG',
+  '/images/bCarousel2.JPG',
+  '/images/bCarousel3.JPG',
+  '/images/bCarousel4.JPG',
+  '/images/bCarousel5.JPG',
+  '/images/bCarousel6.JPG',
 ]
 
 const Bureaux = () => {

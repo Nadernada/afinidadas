@@ -8,12 +8,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
 
 const imgPaths = [
-  '/images/coCarousel1.jpg',
-  '/images/coCarousel2.jpg',
-  '/images/coCarousel3.jpg',
-  '/images/coCarousel4.jpg',
-  '/images/coCarousel5.jpg',
-  '/images/coCarousel6.jpg',
+  '/images/coCarousel1.JPG',
+  '/images/coCarousel2.JPG',
+  '/images/coCarousel3.JPG',
+  '/images/coCarousel4.JPG',
+  '/images/coCarousel5.JPG',
+  '/images/coCarousel6.JPG',
 ]
 
 const Coworking = () => {
