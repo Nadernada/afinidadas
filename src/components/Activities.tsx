@@ -72,7 +72,7 @@ const Activities = () => {
                   <div className="absolute top-0 lg:left-12 rounded-ee-[40px] flex justify-center items-center p-6">
                     <h2 className="uppercase text-[24px] lg:text-[40px] font-bold">teambuilding</h2>
                   </div>
-                  <img src="/images/teambuilding.png" alt="teambuilding activities" className="rounded-[30px] h-full aspect-auto" loading="lazy" />
+                  <img src="/images/teambuilding.png" alt="teambuilding activities" className="rounded-[30px] h-full aspect-auto" />
                 </div>
                 <div className="flex flex-col gap-y-4 lg:w-6/12">
                   <div className="flex flex-row justify-between gap-x-2">
