@@ -22,9 +22,9 @@ function Carousel({images, className}: {images: any, className?: string}) {
     if (!touchStartX) return;
     const touchEndX = e.touches[0].clientX;
     const diff = touchStartX - touchEndX;
-    if (diff > 50) {
+    if (diff > 10) {
       goToNextSlide();
-    } else if (diff < -50) {
+    } else if (diff < -10) {
       goToPrevSlide();
     }
     touchStartX = null;
@@ -35,7 +35,7 @@ function Carousel({images, className}: {images: any, className?: string}) {
 
   return (
     <div className='w-full flex flex-col items-center'>
-      <div className={`w-full flex flex-row justify-center items-center gap-x-3 lg:w-10/12 ${className}`} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+      <div className={`w-full flex flex-row justify-center items-center gap-x-3 lg:w-10/12 touch-auto ${className}`} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
         <div className="hidden lg:inline prev-div w-4 h-4 cursor-pointer" onClick={goToPrevSlide}>
           <img src='/images/right-arrow.svg' alt='chevron' width={25} height={25} className='max-w-5 text-primary rotate-180' />
         </div>

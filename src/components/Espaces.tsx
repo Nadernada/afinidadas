@@ -41,7 +41,7 @@ const Espace = () => {
           <div className="flex flex-row justify-between">
             <p className="text-[10px] lg:text-[16px]">Des bureaux privés élégants et fonctionnels vous attendent chez Afinidades.</p>
             <Link to={'/reunion'}>
-              <div className="w-[70px] h-[70px]"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
+              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
             </Link>
           </div>
         </div>
@@ -50,7 +50,7 @@ const Espace = () => {
           <div className="flex flex-row justify-between">
             <p className="text-[10px] lg:text-[16px]">Des bureaux privés élégants et fonctionnels vous attendent chez Afinidades.</p>
             <Link to={'/bureaux'}>
-              <div className="w-[70px] h-[70px]"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
+              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
             </Link>
           </div>
         </div>
@@ -62,7 +62,7 @@ const Espace = () => {
           <div className="flex flex-row justify-between">
             <p className="text-[10px] lg:text-[16px]">Des bureaux privés élégants et fonctionnels vous attendent chez Afinidades.</p>
             <Link to={'/co-working'}>
-              <div className="w-[70px] h-[70px]"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
+              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
             </Link>
           </div>
         </div>

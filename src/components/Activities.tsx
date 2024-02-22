@@ -76,7 +76,7 @@ const Activities = () => {
                 </div>
                 <div className="flex flex-col gap-y-4 lg:w-6/12">
                   <div className="flex flex-row justify-between gap-x-2">
-                    <Link to={'/teambuilding'} className="rounded-full bg-bluey w-7/12 p-3 flex items-center justify-center">
+                    <Link to={'/teambuilding'} className="rounded-full bg-bluey hover:bg-blue-500 transition-colors w-7/12 p-3 flex items-center justify-center">
                       <p className="text-white text-[20px] lg:text-[32px] font-semibold">Decouvrir &gt;</p>
                     </Link>
                     <div className="rounded-full flex-1 p-3 bg-slate-300 flex justify-center items-center">
@@ -105,7 +105,7 @@ const Activities = () => {
                 </div>
                 <div className="flex flex-col gap-y-4 lg:w-6/12">
                   <div className="flex flex-row justify-between gap-x-2">
-                    <Link to={'/formation'} className="rounded-full bg-orangey w-7/12 p-3 flex items-center justify-center">
+                    <Link to={'/formation'} className="rounded-full bg-orangey hover:bg-orange-600 transition-colors w-7/12 p-3 flex items-center justify-center">
                       <p className="text-white text-[20px] lg:text-[32px] font-semibold">Decouvrir &gt;</p>
                     </Link>
                     <div className="rounded-full flex-1 p-3 bg-slate-300 flex justify-center items-center">
