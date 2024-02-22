@@ -44,7 +44,7 @@ function Carousel({images, className}: {images: any, className?: string}) {
           key={Math.random()}
           className=" relative w-full justify-center"
         >
-          <img src={images[currentIndex]} className='md:w-full w-full lg:h-[650px] rounded-3xl lg:rounded-[60px] touch-pan-x z-30' loading='lazy' onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} ref={image}/>
+          <img src={images[currentIndex]} className='md:w-full w-full lg:h-[650px] rounded-3xl lg:rounded-[60px] touch-pan-x z-30' onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} ref={image}/>
 
         </div>
         <div className="hidden lg:inline next-div w-4 h-4 cursor-pointer" onClick={goToNextSlide} >
