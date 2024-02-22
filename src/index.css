@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://db.onlinewebfonts.com/c/2d3e3d7592d858169466b7fdffa7ffa6?family=ITC+Ronda+W01+Regular);
-
+@font-face {
+  font-family: "ITC Ronda Regular";
+  src:
+    local("ITC Ronda Regular"),
+    url("/public/ITC\ Ronda\ Regular.otf") format("opentype"),
+}
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +19,7 @@ html, body {
 }
 
 body {
-  font-family: "ITC Ronda W01 Regular";
+  font-family: "ITC Ronda Regular";
 }
 
 .bg-illu {
