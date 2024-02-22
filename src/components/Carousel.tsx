@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 
 function Carousel({images, className}: {images: any, className?: string}) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const image = useRef(null)
 
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
@@ -35,7 +36,7 @@ function Carousel({images, className}: {images: any, className?: string}) {
 
   return (
     <div className='w-full flex flex-col items-center'>
-      <div className={`w-full flex flex-row justify-center items-center gap-x-3 lg:w-10/12 touch-auto ${className}`} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+      <div className={`w-full flex flex-row justify-center items-center gap-x-3 lg:w-10/12 touch-auto ${className}`}>
         <div className="hidden lg:inline prev-div w-4 h-4 cursor-pointer" onClick={goToPrevSlide}>
           <img src='/images/right-arrow.svg' alt='chevron' width={25} height={25} className='max-w-5 text-primary rotate-180' />
         </div>
@@ -43,10 +44,10 @@ function Carousel({images, className}: {images: any, className?: string}) {
           key={Math.random()}
           className=" relative w-full justify-center"
         >
-          <img src={images[currentIndex]} className='md:w-full w-full lg:h-[650px] rounded-3xl lg:rounded-[60px]' loading='lazy'/>
+          <img src={images[currentIndex]} className='md:w-full w-full lg:h-[650px] rounded-3xl lg:rounded-[60px] touch-pan-x z-30' loading='lazy' onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} ref={image}/>
 
         </div>
-        <div className="hidden lg:inline next-div w-4 h-4 cursor-pointer" onClick={goToNextSlide}>
+        <div className="hidden lg:inline next-div w-4 h-4 cursor-pointer" onClick={goToNextSlide} >
           <img src='/images/right-arrow.svg' alt='chevron' width={25} height={25} className='max-w-5 text-primary' />
         </div>
       </div>
