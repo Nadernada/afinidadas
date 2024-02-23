@@ -83,8 +83,8 @@ const Teambuilding = () => {
           <img src="/images/teamHero.png" alt="teambuilding tanger" className="fade-left-hero w-full" />
           <img src="/images/grayStar.svg" alt="star" className="fade-left-hero hidden lg:w-[122px] h-[122px] -bottom-16 -left-28 absolute" />
           <a href='https://wa.me/+212666546005'>
-            <div className="fade-left-hero rounded-full bg-bluey w-7/12 px-4 py-6 lg:py-12 flex flex-row gap-x-2 items-center justify-center absolute bottom-3 lg:bottom-4 right-4 lg:right-6">
-              <img src="/images/whatsapp-icon.svg" alt="whatsapp icon" className="w-4 lg:w-8 h-4 lg:h-8 invert-1" />
+            <div className="fade-left-hero rounded-full bg-bluey w-7/12 px-4 py-3 lg:py-12 flex flex-row gap-x-2 items-center justify-center absolute bottom-3 lg:bottom-4 right-4 lg:right-6">
+              <img src="/images/whatsapp-icon.svg" alt="whatsapp icon" className="w-6 lg:w-8 h-6 lg:h-8 invert-1" />
               <p className="text-white text-[20px] lg:text-[30px] font-semibold">Contactez-nous</p>
             </div>
           </a>

@@ -122,7 +122,7 @@ const Coworking = () => {
       </div>
 
       <div className="w-full flex flex-col px-6 lg:px-24 gap-y-6 mb-12">
-        <h2 className="fade-up-trigger font-bold text-[24px] lg:text-[48px] lg:p-5">La Press Parle de Nous</h2>
+        <h2 className="fade-up-trigger font-bold text-[24px] lg:text-[48px] lg:p-5">La Presse Parle de Nous !</h2>
 
         <div className="w-full flex flex-col lg:flex-row items-center justify-evenly gap-y-3 lg:gap-x-4 lg:px-12">
           {

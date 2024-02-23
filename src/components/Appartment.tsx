@@ -44,9 +44,9 @@ const Appartment = () => {
   return (
     <div className=" w-[95%] mt-20 lg:mt-0 px-6 flex flex-col lg:flex-row gap-y-6 lg:gap-x-6 justify-between" ref={container}>
       <div className="appart-ct flex flex-col gap-y-4 lg:w-5/12 relative">
-        <h5 className="fade-right text-[24px] lg:text-[40px] font-bold">Souhaitez-vous trouver votre appartement idéal?</h5>
-        <p className="fade-right text-[16px] lg:text-[20px] w-8/12">Découvrez nos locations premium et trouvez la maison parfaite qui vous correspond!</p>
-        <img src="/images/blueStar.svg" alt="star" className="fade-in absolute -right-4 bottom-10 lg:bottom-16 scale-75 lg:scale-100" />
+        <h5 className="fade-right text-[18px] lg:text-[30px] font-bold">Souhaitez-vous trouver votre appartement idéal, spécialement conçu pour les besoins des entrepreneurs et des professionnels ?</h5>
+        <p className="fade-right text-[14px] lg:text-[18px]">Découvrez notre gamme de locations premium, idéalement adaptées aux exigences des entrepreneurs modernes. Trouvez la maison parfaite qui correspond non seulement à vos attentes de confort et de style, mais qui est aussi conçue pour faciliter votre succès dans le monde des affaires.</p>
+        <img src="/images/blueStar.svg" alt="star" className="fade-in absolute -right-16 bottom-10 lg:bottom-0 scale-50 lg:scale-75 z-10" />
       </div>
       <div className="relative flex-1">
         <img src="/images/reviews.png" alt="location appartement" className="fade-right w-full" loading="lazy" />

@@ -39,7 +39,7 @@ const Espace = () => {
         <div className="fade-in lg:w-[30%] rounded-[30px] bg-orangey flex flex-col text-white p-6 lg:p-8 gap-y-4">
           <h4 className="text-[24px] lg:text-[32px] font-semibold">Salle de Reunion</h4>
           <div className="flex flex-row justify-between">
-            <p className="text-[10px] lg:text-[16px]">Des bureaux privés élégants et fonctionnels vous attendent chez Afinidades.</p>
+            <p className="text-[10px] lg:text-[16px]">équipé de la technologie moderne et des équipements pour accueillir un large éventail de réunions, présentations, ateliers et événements.</p>
             <Link to={'/reunion'}>
               <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
             </Link>
@@ -60,7 +60,7 @@ const Espace = () => {
         <div className="fade-in lg:w-[30%] rounded-[30px] bg-orangey flex flex-col text-white p-6 lg:p-8 gap-y-4 h-fit">
           <h4 className="text-[24px] lg:text-[32px] font-semibold">Espace CoWorking</h4>
           <div className="flex flex-row justify-between">
-            <p className="text-[10px] lg:text-[16px]">Des bureaux privés élégants et fonctionnels vous attendent chez Afinidades.</p>
+            <p className="text-[10px] lg:text-[16px]">Un environnement dynamique et dynamique où les entrepreneurs, les indépendants et les petites entreprises peuvent prospérer.</p>
             <Link to={'/co-working'}>
               <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
             </Link>

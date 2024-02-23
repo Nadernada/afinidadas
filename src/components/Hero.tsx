@@ -40,7 +40,7 @@ const Hero = () => {
       <Navbar />
 
       <div className="flex flex-col items-center justify-center lg:-translate-x-24">
-        <h1 className="fade-up uppercase text-[24px] lg:text-[48px] font-black translate-x-10 lg:translate-x-0">LE DÉVELOPPEMENT <span className="text-orangey">PROFESSIONNEL</span></h1>
+        <h1 className="fade-up uppercase text-[28px] lg:text-[48px] font-black translate-x-14 lg:translate-x-0">LE DÉVELOPPEMENT <span className="text-orangey">PROFESSIONNEL</span></h1>
         <div className="flex flex-col items-start lg:translate-x-[50%] relative">
           <img src="/images/Soft Star.svg" alt="star" className="w-[20px] lg:w-[40px] h-[20px] lg:h-[40px] absolute right-4 lg:-right-6 -top-2 lg:-top-4" />
           <h1 className="fade-up uppercase text-[24px] lg:text-[48px] font-black">DANS LE CADRE <span className="text-bluey">IDÉAL</span></h1>

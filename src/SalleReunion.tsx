@@ -8,10 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
 
 const imgPaths = [
-  '/images/rCarousel4.JPG',
+  '/images/rCarousel4.jpg',
   '/images/rCarousel1.JPG',
   '/images/rCarousel2.JPG',
-  '/images/rCarousel3.JPG',
+  '/images/rCarousel3.jpg',
 ]
 
 const SalleReunion = () => {
