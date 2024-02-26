@@ -4,6 +4,12 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
+import rightArrow from '../images/right-arrow.svg'
+import redirectArrowBlue from '../images/redirectArrowBlue.svg'
+import teambuildingImage from '../images/teambuilding.png'
+import zigzag from '../images/zigzag.svg'
+import formationImage from '../images/formation.png'
+
 const Activities = () => {
 
   const [isActive, setIsActive] = useState(0)
@@ -56,13 +62,13 @@ const Activities = () => {
     <div className="flex flex-row items-center mt-8 lg:mt-0" ref={container}>
 
       <div className="fade-in ps-20 hidden lg:inline">
-        <img src="/images/right-arrow.svg" alt="arrow" className="w-10 h-10 translate-y-28 cursor-pointer rotate-180" onClick={handleNext} />
+        <img src={rightArrow} alt="arrow" className="w-10 h-10 translate-y-28 cursor-pointer rotate-180" onClick={handleNext} />
       </div>
 
       <div className="activities-ct flex flex-col gap-y-6 lg:gap-y-12 px-10 transition-all">
           <div className="flex flex-row w-full gap-x-2 items-center justify-start lg:ps-12">
             <h1 className="fade-in text-[24px] lg:text-[64px] font-bold uppercase">Ameliorer votre business</h1>
-            <img src="/images/redirectArrowBlue.svg" alt="arrow" className="fade-in w-[55px] lg:w-[75px] h-[55px] lg:h-[55px]" />
+            <img src={redirectArrowBlue} alt="arrow" className="fade-in w-[55px] lg:w-[75px] h-[55px] lg:h-[55px]" />
           </div>
 
           {
@@ -72,7 +78,7 @@ const Activities = () => {
                   <div className="absolute top-0 lg:left-12 rounded-ee-[40px] flex justify-center items-center p-6">
                     <h2 className="uppercase text-[24px] lg:text-[40px] font-bold">teambuilding</h2>
                   </div>
-                  <img src="/images/teamBuilding.png" alt="teambuilding activities" className="rounded-[30px] w-full aspect-auto" />
+                  <img src={teambuildingImage} alt="teambuilding activities" className="rounded-[30px] w-full aspect-auto" />
                 </div>
                 <div className="flex flex-col gap-y-4 lg:w-6/12">
                   <div className="flex flex-row justify-between gap-x-2">
@@ -87,7 +93,7 @@ const Activities = () => {
                     <p className="text-[16px] lg:text-[20px] text-white">Favorisez la cohésion d'équipe et la collaboration au sein de votre entreprise grâce à nos activités de teambuilding uniques.</p>
                   </div>
                   <div className="flex flex-row gap-x-10">
-                    <img src="/images/zigzag.svg" alt="zigzag" className="hidden lg:inline"/>
+                    <img src={zigzag} alt="zigzag" className="hidden lg:inline"/>
                     <div className="rounded-[35px] p-8 bg-slate-300">
                       <p className="text-[16px] lg:text-[20px]">Des expériences mémorables pour renforcer les liens entre vos collaborateurs</p>
                     </div>
@@ -101,7 +107,7 @@ const Activities = () => {
                   <div className="absolute top-0 lg:left-12 rounded-ee-[40px] flex justify-center items-center p-6">
                     <h2 className="uppercase text-[24px] lg:text-[40px] font-bold">Formation</h2>
                   </div>
-                  <img src="/images/formation.png" alt="teambuilding activities" className="rounded-[30px] w-full aspect-auto" loading="lazy" />
+                  <img src={formationImage} alt="teambuilding activities" className="rounded-[30px] w-full aspect-auto" loading="lazy" />
                 </div>
                 <div className="flex flex-col gap-y-4 lg:w-6/12">
                   <div className="flex flex-row justify-between gap-x-2">
@@ -116,7 +122,7 @@ const Activities = () => {
                     <p className="text-[16px] lg:text-[20px] text-white">En mettant l'accent sur les compétences et les aptitudes les plus pertinentes pour atteindre vos objectifs professionnels.</p>
                   </div>
                   <div className="flex flex-row gap-x-10">
-                    <img src="/images/zigzag.svg" alt="zigzag" className="hidden lg:inline"/>
+                    <img src={zigzag} alt="zigzag" className="hidden lg:inline"/>
                     <div className="rounded-[35px] p-8 bg-slate-300">
                       <p className="text-[18px]">Afinidades propose des programmes de formation sur mesure adaptés à vos besoins spécifiques.</p>
                     </div>
@@ -132,7 +138,7 @@ const Activities = () => {
           </div>
       </div>
       <div className="fade-in pe-20 hidden lg:inline">
-        <img src="/images/right-arrow.svg" alt="arrow" className="w-10 h-10 translate-y-28 cursor-pointer" onClick={handleNext} />
+        <img src={rightArrow} alt="arrow" className="w-10 h-10 translate-y-28 cursor-pointer" onClick={handleNext} />
       </div>
     </div>
   )

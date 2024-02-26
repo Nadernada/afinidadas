@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
 
+import rightArrow from '../images/right-arrow.svg'
+
 
 function Carousel({images, className}: {images: any, className?: string}) {
 
@@ -38,7 +40,7 @@ function Carousel({images, className}: {images: any, className?: string}) {
     <div className='w-full flex flex-col items-center'>
       <div className={`w-full flex flex-row justify-center items-center gap-x-3 lg:w-10/12 touch-auto ${className}`}>
         <div className="hidden lg:inline prev-div w-4 h-4 cursor-pointer" onClick={goToPrevSlide}>
-          <img src='/images/right-arrow.svg' alt='chevron' width={25} height={25} className='max-w-5 text-primary rotate-180' />
+          <img src={rightArrow} alt='chevron' width={25} height={25} className='max-w-5 text-primary rotate-180' />
         </div>
         <div
           key={Math.random()}
@@ -48,7 +50,7 @@ function Carousel({images, className}: {images: any, className?: string}) {
 
         </div>
         <div className="hidden lg:inline next-div w-4 h-4 cursor-pointer" onClick={goToNextSlide} >
-          <img src='/images/right-arrow.svg' alt='chevron' width={25} height={25} className='max-w-5 text-primary' />
+          <img src={rightArrow} alt='chevron' width={25} height={25} className='max-w-5 text-primary' />
         </div>
       </div>
       <div className='flex flex-row justify-center items-center gap-x-2 mt-6'>

@@ -3,6 +3,9 @@ import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
 
+import blueStar from '../images/blueStar.svg'
+import reviewsSphere from '../images/reviewsSphereHome.svg'
+
 const review = [
   {
     name: 'Yasmina',
@@ -89,11 +92,11 @@ const Reviews = () => {
   return (
     <div className="w-full mt-28 lg:mt-36 flex flex-col overflow-hidden" ref={container}>
       <div className="reviews-ct flex flex-row justify-start items-center lg:px-12">
-        <img src="/images/blueStar.svg" alt="star" className="fade-in scale-50 lg:scale-75 " />
+        <img src={blueStar} alt="star" className="fade-in scale-50 lg:scale-75 " />
         <h2 className="fade-in text-[24px] lg:text-[40px] uppercase font-bold">notre fierte c'est vous</h2>
       </div>
       <div className="flex flex-col gap-y-6">
-        <img src="/images/reviewsSphereHome.svg" alt="reviews" className="fade-right lg:w-[1041px] lg:h-[842px] w-full mx-auto translate-x-8 lg:-translate-y-28 lg:translate-x-12" />
+        <img src={reviewsSphere} alt="reviews" className="fade-right lg:w-[1041px] lg:h-[842px] w-full mx-auto translate-x-8 lg:-translate-y-28 lg:translate-x-12" />
       </div>
     </div>
   )

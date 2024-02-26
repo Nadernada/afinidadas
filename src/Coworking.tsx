@@ -7,19 +7,33 @@ import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
 
+import coworkingHero from './images/coWorkingHero.png'
+import softStar from './images/Soft Star.svg'
+import coworkingIllu from './images/coworkingIllu.png'
+import dawn from './images/Dawn.png'
+import article1 from './images/article1.jpeg'
+import article2 from './images/article2.jpeg'
+import article3 from './images/article3.jpg'
+import carousel1 from './images/coCarousel1.jpg'
+import carousel2 from './images/coCarousel2.jpg'
+import carousel3 from './images/coCarousel3.jpg'
+import carousel4 from './images/coCarousel4.jpg'
+import carousel5 from './images/coCarousel5.jpg'
+import carousel6 from './images/coCarousel6.jpg'
+
 const imgPaths = [
-  '/images/coCarousel1.JPG',
-  '/images/coCarousel2.JPG',
-  '/images/coCarousel3.JPG',
-  '/images/coCarousel4.JPG',
-  '/images/coCarousel5.JPG',
-  '/images/coCarousel6.JPG',
+  carousel1,
+  carousel2,
+  carousel3,
+  carousel4,
+  carousel5,
+  carousel6,
 ]
 
 const articlePaths = [
-  '/images/article1.jpeg',
-  '/images/article2.jpeg',
-  '/images/article3.jpg',
+  article1,
+  article2,
+  article3,
 ]
 
 const Coworking = () => {
@@ -79,15 +93,15 @@ const Coworking = () => {
     <div className="w-full flex flex-col lg:items-center mx-auto px-4 lg:px-0 2xl:max-w-[1440px] overflow-hidden" ref={container}>
       <Navbar />
 
-      <img src="/images/coWorkingHero.png" alt="coworking espace" className="fade-in mt-16" />
+      <img src={coworkingHero} alt="coworking espace" className="fade-in mt-16" />
       <div className="relative">
         <h1 className="fade-in text-[24px] lg:text-[48px] font-bold mt-8">Espace Co-<br/>Working</h1>
-        <img src="/images/Soft Star.svg" alt="star" className="fade-in w-8 h-8 absolute right-48 lg:right-12 -bottom-0 lg:-bottom-4" />
+        <img src={softStar} alt="star" className="fade-in w-8 h-8 absolute right-48 lg:right-12 -bottom-0 lg:-bottom-4" />
       </div>
-      <img src="/images/coworkingIllu.png" alt="coworking espace" className="fade-up -translate-y-36 hidden lg:inline" />
+      <img src={coworkingIllu} alt="coworking espace" className="fade-up -translate-y-36 hidden lg:inline" />
 
       <p className="fade-up text-[16px] lg:text-[24px] lg:w-9/12 mb-12 mt-3 lg:mt-0 lg:-translate-y-16">Rejoignez notre espace de co-working au cœur de Tanger. Afinidades vous offre un environnement stimulant, propice à la créativité et à la collaboration.<br /><br/>Rejoignez notre communauté de professionnels aujourd'hui et partagez vos idées dans un espace moderne et inspirant.</p>
-      <img src="/images/Dawn.png" alt="dawn" className="absolute left-0 bottom-0 -z-10 opacity-35" />
+      <img src={dawn} alt="dawn" className="absolute left-0 bottom-0 -z-10 opacity-35" />
 
       <Carousel images={imgPaths} />
 

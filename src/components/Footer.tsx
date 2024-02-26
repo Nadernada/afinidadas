@@ -4,6 +4,10 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
+import logo from '../images/Logo-Afinidadas.png'
+import telegram from '../images/telegram.svg'
+import whatsapp from '../images/whatsapp.svg'
+
 const Footer = () => {
 
   const container = useRef(null)
@@ -46,7 +50,7 @@ const Footer = () => {
     <div className="footer-ct w-[97%] mt-6 lg:mb-5 p-10 bg-bluey rounded-[35px] self-center" ref={container}>
       <div className="flex flex-col gap-y-24">
         <div className="fade-in flex flex-col lg:flex-row gap-y-6 justify-between">
-          <Link to={'/'}><img src="/images/Logo-Afinidadas.png" alt="logo afinadadas" className="w-[140px] lg:w-[188px] h-[64px] lg:h-[82px]" /></Link>
+          <Link to={'/'}><img src={logo} alt="logo afinadadas" className="w-[140px] lg:w-[188px] h-[64px] lg:h-[82px]" /></Link>
 
           <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-12">
             <div className="flex flex-col gap-y-6 text-white">
@@ -78,8 +82,8 @@ const Footer = () => {
         </div>
         <div  className="flex flex-col lg:flex-row gap-y-6 lg:w-1/3 justify-between">
           <div className="flex flex-row gap-x-2">
-            <img src="/images/telegram.svg" alt="social" className="fade-in w-[40px] h-[40px]" />
-            <a href="https://wa.me/+212666546005"><img src="/images/whatsapp.svg" alt="social" className="fade-in w-[40px] h-[40px]" /></a>
+            <img src={telegram} alt="social" className="fade-in w-[40px] h-[40px]" />
+            <a href="https://wa.me/+212666546005"><img src={whatsapp} alt="social" className="fade-in w-[40px] h-[40px]" /></a>
           </div>
           <p className="fade-in text-[12px] text-white">bureau 5, Résidence Perla Oficinas, Av. Oujda,<br />Tanger</p>
         </div>

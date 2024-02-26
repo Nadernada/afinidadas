@@ -7,12 +7,21 @@ import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
 
+import carousel2 from './images/bCarousel2.jpg'
+import carousel3 from './images/bCarousel3.jpg'
+import carousel4 from './images/bCarousel4.jpg'
+import carousel5 from './images/bCarousel5.jpg'
+import carousel6 from './images/bCarousel6.jpg'
+import bureauxThumb from './images/bureauxThumb.webp'
+import dawn from './images/Dawn.png'
+
+
 const imgPaths = [
-  '/images/bCarousel2.JPG',
-  '/images/bCarousel3.JPG',
-  '/images/bCarousel4.JPG',
-  '/images/bCarousel5.JPG',
-  '/images/bCarousel6.JPG',
+  carousel2,
+  carousel3,
+  carousel4,
+  carousel5,
+  carousel6,
 ]
 
 const Bureaux = () => {
@@ -72,10 +81,10 @@ const Bureaux = () => {
     <div className="w-full 2xl:max-w-[1440px] flex flex-col mx-auto lg:items-center" ref={container}>
       <Navbar />
 
-      <img src="/images/bureauxThumb.webp" alt="coworking espace" className="fade-in mt-12 w-[90%] lg:w-[1065px] self-center" />
+      <img src={bureauxThumb} alt="coworking espace" className="fade-in mt-12 w-[90%] lg:w-[1065px] self-center" />
 
       <p className="fade-in text-[16px] lg:text-[24px] lg:w-9/12 my-6 lg:my-12 px-12 lg:px-0">Rejoignez notre espace de co-working au cœur de Tanger. Afinidades vous offre un environnement stimulant, propice à la créativité et à la collaboration.<br/> <br/>Rejoignez notre communauté de professionnels aujourd'hui et partagez vos idées dans un espace moderne et inspirant.</p>
-      <img src="/images/Dawn.png" alt="dawn" className="fade-in absolute left-0 bottom-0 -z-10 opacity-35" />
+      <img src={dawn} alt="dawn" className="fade-in absolute left-0 bottom-0 -z-10 opacity-35" />
 
       <Carousel images={imgPaths} className='px-6' />
 

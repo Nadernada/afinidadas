@@ -4,6 +4,10 @@ import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
+import leftSideDesk from '../images/leftSideDesk.png'
+import espaceIllu from '../images/espacesIllustration.png'
+import redirectArrow from '../images/redirectArrow.svg'
+
 const Espace = () => {
 
   const container = useRef(null)
@@ -34,14 +38,14 @@ const Espace = () => {
 
   return (
     <div className="w-full mt-40 lg:pe-12 flex flex-col gap-y-6 relative container" ref={container}>
-      <img src="/images/leftSideDesk.png" alt="location bureaux tanger" className="fade-in hidden lg:inline absolute top-0 left-0" loading="lazy" />
+      <img src={leftSideDesk} alt="location bureaux tanger" className="fade-in hidden lg:inline absolute top-0 left-0" loading="lazy" />
       <div className="w-full flex flex-col lg:flex-row gap-y-6 lg:gap-x-6 lg:justify-end px-8 lg:px-0">
         <div className="fade-in lg:w-[30%] rounded-[30px] bg-orangey flex flex-col text-white p-6 lg:p-8 gap-y-4">
           <h4 className="text-[24px] lg:text-[32px] font-semibold">Salle de Reunion</h4>
           <div className="flex flex-row justify-between">
             <p className="text-[10px] lg:text-[16px]">équipé de la technologie moderne et des équipements pour accueillir un large éventail de réunions, présentations, ateliers et événements.</p>
             <Link to={'/reunion'}>
-              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
+              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src={redirectArrow} alt="arrow" /></div>
             </Link>
           </div>
         </div>
@@ -50,19 +54,19 @@ const Espace = () => {
           <div className="flex flex-row justify-between">
             <p className="text-[10px] lg:text-[16px]">Des bureaux privés élégants et fonctionnels vous attendent chez Afinidades.</p>
             <Link to={'/bureaux'}>
-              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
+              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src={redirectArrow} alt="arrow" /></div>
             </Link>
           </div>
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-y6 lg:gap-x-6 lg:justify-end px-8 lg:px-0">
-        <img src="/images/espacesIllustration.png" alt="espace coworking" className="fade-in -translate-y-8 lg:-translate-y-16 order-last lg:order-none z-10" loading="lazy" />
+        <img src={espaceIllu} alt="espace coworking" className="fade-in -translate-y-8 lg:-translate-y-16 order-last lg:order-none z-10" loading="lazy" />
         <div className="fade-in lg:w-[30%] rounded-[30px] bg-orangey flex flex-col text-white p-6 lg:p-8 gap-y-4 h-fit">
           <h4 className="text-[24px] lg:text-[32px] font-semibold">Espace CoWorking</h4>
           <div className="flex flex-row justify-between">
             <p className="text-[10px] lg:text-[16px]">Un environnement dynamique et dynamique où les entrepreneurs, les indépendants et les petites entreprises peuvent prospérer.</p>
             <Link to={'/co-working'}>
-              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src="/images/redirectArrow.svg" alt="arrow" /></div>
+              <div className="w-[70px] h-[70px] hover:scale-[90%] transition-all"><img src={redirectArrow} alt="arrow" /></div>
             </Link>
           </div>
         </div>

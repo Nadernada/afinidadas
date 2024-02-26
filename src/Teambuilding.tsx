@@ -7,6 +7,12 @@ import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
+import teamHero from './images/teamHero.png'
+import grayStar from './images/grayStar.svg'
+import whatsapp from './images/whatsapp-icon.svg'
+import teamActivity from './images/teambuildingActivity.png'
+import reviewsSphere from './images/reviewsSphere.svg'
+
 const Teambuilding = () => {
 
   const container = useRef(null)
@@ -80,11 +86,11 @@ const Teambuilding = () => {
           <h1 className="fade-in capitalize text-[24px] lg:text-[64px] font-bold order-first lg:order-none">Exploitez tout le potentiel de votre équipe</h1>
         </div>
         <div className="flex-1 relative order-first lg:order-none">
-          <img src="/images/teamHero.png" alt="teambuilding tanger" className="fade-left-hero w-full" />
-          <img src="/images/grayStar.svg" alt="star" className="fade-left-hero hidden lg:w-[122px] h-[122px] -bottom-16 -left-28 absolute" />
+          <img src={teamHero} alt="teambuilding tanger" className="fade-left-hero w-full" />
+          <img src={grayStar} alt="star" className="fade-left-hero hidden lg:w-[122px] h-[122px] -bottom-16 -left-28 absolute" />
           <a href='https://wa.me/+212666546005'>
             <div className="fade-left-hero rounded-full bg-bluey w-7/12 px-4 py-3 lg:py-12 flex flex-row gap-x-2 items-center justify-center absolute bottom-3 lg:bottom-4 right-4 lg:right-6">
-              <img src="/images/whatsapp-icon.svg" alt="whatsapp icon" className="w-6 lg:w-8 h-6 lg:h-8 invert-1" />
+              <img src={whatsapp} alt="whatsapp icon" className="w-6 lg:w-8 h-6 lg:h-8 invert-1" />
               <p className="text-white text-[20px] lg:text-[30px] font-semibold">Contactez-nous</p>
             </div>
           </a>
@@ -93,12 +99,12 @@ const Teambuilding = () => {
 
       <div className="activity-trigger lg:w-11/12 rounded-[60px] mt-20 lg:mt-36 p-6 lg:p-16 pt-16 flex flex-col bg-gradient-to-b from-orangey/15 from-5% to-transparent to-70% lg:h-[750px]">
         <h3 className="fade-up-ac-trigger font-bold text-[24px] lg:text-[48px] capitalize lg:w-1/2">certains de nos activites teambuilding</h3>
-        <img src="/images/teambuildingActivity.png" alt="teambuilding" className="fade-up-ac-trigger lg:-translate-y-36 "/>
+        <img src={teamActivity} alt="teambuilding" className="fade-up-ac-trigger lg:-translate-y-36 "/>
       </div>
 
       <div className="avis-trigger w-full flex flex-col px-6 lg:px-36 lg:mt-48 mb-12 lg:mb-0 items-center">
         <h2 className="fade-up-trigger capitalize font-bold text-[24px] lg:text-[40px] lg:w-1/2 me-auto">des commentaires qui<br /> nous font honneur</h2>
-        <img src="/images/reviewsSphere.svg" alt="reviews" className="fade-up-trigger lg:w-[1041px] lg:h-[842px] w-full mx-auto lg:-translate-y-28 translate-x-4 lg:translate-x-12 scale-150 lg:scale-100" />
+        <img src={reviewsSphere} alt="reviews" className="fade-up-trigger lg:w-[1041px] lg:h-[842px] w-full mx-auto lg:-translate-y-28 translate-x-4 lg:translate-x-12 scale-150 lg:scale-100" />
       </div>
 
       <div className="faq-trigger w-full flex flex-col relative bg-slate-100 px-6 lg:px-60 py-16 my-12 lg:mt-0 ">

@@ -7,6 +7,14 @@ import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
 
+import dawn from './images/Dawn.png'
+import grayStar from './images/grayStar.svg'
+import formationHero from './images/formationHero.png'
+import whatsapp from './images/whatsapp-icon.svg'
+import spiral from './images/SpiralFormation.png'
+import formationIllu from './images/formationIllu.png'
+import reviewsSphere from './images/reviewsSphere.svg'
+
 const Formation = () => {
 
   const container = useRef(null)
@@ -90,21 +98,21 @@ const Formation = () => {
       <Navbar />
 
       <div className="w-full flex flex-col gap-y-4 px-6 lg:px-36 mt-6 lg:mt-16 justify-start items-center relative">
-        <img src="/images/Dawn.png" alt="dawn" className="absolute left-0 top-[45%] -z-10 opacity-35" />
+        <img src={dawn} alt="dawn" className="absolute left-0 top-[45%] -z-10 opacity-35" />
         <h1 className="fade-in text-[24px] lg:text-[64px] font-bold lg:w-10/12">Besoin de <span className="text-bluey">perfectionner</span> vos compétences professionnelles ?</h1>
         <p className="fade-in text-[16px] lg:text-[24px] lg:w-10/12">Afinidades propose des programmes de formation sur mesure adaptés à vos besoins spécifiques. Investissez dans votre développement personnel et professionnel avec nos cours de qualité.</p>
         <div className="flex flex-col lg:flex-row gap-y-6 lg:gap-x-8 lg:mt-10  order-first lg:order-none">
           <div className="flex flex-col gap-y-6 justify-center items-center">
-            <img src="/images/grayStar.svg" alt="star" className="fade-right hidden lg:inline w-[122px] h-[122px] translate-y-12" />
+            <img src={grayStar} alt="star" className="fade-right hidden lg:inline w-[122px] h-[122px] translate-y-12" />
             <div className="fade-left hidden lg:flex rounded-[35px] border-[8px] border-bluey flex-col p-4 mt-auto">
               <p className="fade-left text-[40px] font-bold">+450</p>
               <p className="fade-left text-[24px]">Personnes<br /> Satisfaites</p>
             </div>
           </div>
           <div className="relative flex-1">
-            <img src="/images/formationHero.png" alt="formation sur mesure tanger" className="fade-right w-[845px]" />
+            <img src={formationHero} alt="formation sur mesure tanger" className="fade-right w-[845px]" />
             <a href='https://wa.me/+212666546005' className="fade-left rounded-full bg-orangey w-4/12 px-4 py-2 lg:py-8 flex flex-row gap-x-2 items-center justify-center absolute bottom-1 lg:bottom-8 right-3 lg:right-6">
-              <img src="/images/whatsapp-icon.svg" alt="whatsapp icon" className="w-4 lg:w-8 h-4 lg:h-8 invert-1" />
+              <img src={whatsapp} alt="whatsapp icon" className="w-4 lg:w-8 h-4 lg:h-8 invert-1" />
               <p className="text-white text-[12px] lg:text-[24px] font-semibold text-center lg:text-start">Contactez-nous</p>
             </a>
           </div>
@@ -132,15 +140,15 @@ const Formation = () => {
         <div className="fade-up-trigger flex flex-col lg:translate-y-6 mb-4 lg:mb-0 order-first lg:order-none">
           <h2 className="font-bold text-[24px] lg:text-[48px]">Avantages D'une Formation Sur Mesure</h2>
           <div className="flex flex-row items-center lg:-translate-y-12 ms-auto">
-            <img src="/images/SpiralFormation.png" alt="spiral" className="hidden lg:inline" />
-            <img src="/images/formationIllu.png" alt="formation sur mesure tanger" className="hidden lg:inline h-[346px] w-[346px]" />
+            <img src={spiral} alt="spiral" className="hidden lg:inline" />
+            <img src={formationIllu} alt="formation sur mesure tanger" className="hidden lg:inline h-[346px] w-[346px]" />
           </div>
         </div>
       </div>
 
       <div className="w-full flex flex-col px-6 lg:px-36 mt-12 lg:mt-48 mb-12 lg:mb-0">
         <h2 className="fade-up-reviews capitalize font-bold text-[24px] lg:text-[40px] lg:w-1/2">des commentaires qui<br /> nous font honneur</h2>
-        <img src="/images/reviewsSphere.svg" alt="reviews" className="fade-up-reviews lg:w-[1041px] lg:h-[842px] w-full mx-auto lg:-translate-y-28 translate-x-3 lg:translate-x-12 scale-150 lg:scale-100" />
+        <img src={reviewsSphere} alt="reviews" className="fade-up-reviews lg:w-[1041px] lg:h-[842px] w-full mx-auto lg:-translate-y-28 translate-x-3 lg:translate-x-12 scale-150 lg:scale-100" />
       </div>
 
       <div className="faq-trigger w-full flex flex-col relative bg-slate-100 px-6 lg:px-60 py-16 my-12 lg:mt-0">

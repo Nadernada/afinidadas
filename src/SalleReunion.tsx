@@ -7,11 +7,17 @@ import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
 
+import carousel1 from './images/rCarousel1.jpg'
+import carousel2 from './images/rCarousel2.jpg'
+import carousel3 from './images/rCarousel3.jpg'
+import carousel4 from './images/rCarousel4.jpg'
+import reunion from './images/reunion.svg'
+
 const imgPaths = [
-  '/images/rCarousel4.jpg',
-  '/images/rCarousel1.JPG',
-  '/images/rCarousel2.JPG',
-  '/images/rCarousel3.jpg',
+  carousel4,
+  carousel1,
+  carousel2,
+  carousel3,
 ]
 
 const SalleReunion = () => {
@@ -71,7 +77,7 @@ const SalleReunion = () => {
     <div className="w-full 2xl:max-w-[1440px] flex flex-col mx-auto lg:items-center overflow-hidden" ref={container}>
       <Navbar />
 
-      <img src="/images/reunion.svg" alt="salle de reunion espace" className="fade-in my-12 w-[90%] lg:w-[1065px] self-center" />
+      <img src={reunion} alt="salle de reunion espace" className="fade-in my-12 w-[90%] lg:w-[1065px] self-center" />
 
       <Carousel images={imgPaths} className="px-6" />
 

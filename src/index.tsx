@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import Formation from './Formation';
 import Teambuilding from './Teambuilding';
 import Contact from './Contact';
@@ -11,7 +11,7 @@ import Coworking from './Coworking';
 import SalleReunion from './SalleReunion';
 import Bureaux from './Bureaux';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />
